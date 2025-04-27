@@ -11,6 +11,7 @@ import uvicorn
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+
     yield
 
 
