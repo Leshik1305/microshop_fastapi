@@ -1,20 +1,20 @@
-__all__ = {
+__all__ = (
     "Base",
-    "db_helper",
     "DatabaseHelper",
+    "db_helper",
     "Product",
     "User",
     "Post",
     "Profile",
     "Order",
-    "order_product_association_table",
-}
+    "OrderProductAssociation",
+)
 
 from .base import Base
-from .db_helper import db_helper, DatabaseHelper
+from .db_helper import DatabaseHelper, db_helper
 from .product import Product
 from .user import User
 from .post import Post
 from .profile import Profile
 from .order import Order
-from .order_product_association import order_product_association_table
+from .order_product_association import OrderProductAssociation
